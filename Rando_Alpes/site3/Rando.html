@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramme de Cas d'Utilisation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Diagramme de Cas d'Utilisation</h1>
+        <p>(seuls les cas les plus importants ont été représentés)</p>
+    </header>
+    <main>
+        <section id="user-actions">
+            <h2>Actions du Randonneur</h2>
+            <div class="action" id="creer-compte">
+                <h3>Créer Compte</h3>
+            </div>
+            <div class="action" id="s-inscrire-rando">
+                <h3>S'inscrire Rando</h3>
+                <div class="sub-action">Choisir code</div>
+                <div class="sub-action">Payer Rando</div>
+            </div>
+            <div class="action" id="rechercher-rando">
+                <h3>Rechercher Rando</h3>
+                <div class="sub-action">Parcourant la liste</div>
+                <div class="sub-action">Par accompagnement</div>
+                <div class="sub-action">Par région</div>
+                <div class="sub-action">Par niveau difficulté</div>
+                <div class="sub-action">Par période</div>
+            </div>
+            <div class="action" id="obtenir-code-rando">
+                <h3>Obtenir Code Rando</h3>
+            </div>
+            <div class="action" id="voir-descriptif">
+                <h3>Voir Descriptif</h3>
+            </div>
+        </section>
+        <section id="organizer-actions">
+            <h2>Actions de l'Organisateur</h2>
+            <div class="action" id="gerer-site-rando">
+                <h3>Gérer Site Rando</h3>
+                <div class="sub-action">Créer Rando</div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

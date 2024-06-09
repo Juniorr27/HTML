@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+section {
+    margin: 1em 0;
+}
+
+.action, .sub-action {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#creer-compte {
+    background-color: #ccc;
+}
+
+#s-inscrire-rando {
+    background-color: #d0bfff;
+}
+
+#s-inscrire-rando .sub-action {
+    margin-left: 1em;
+}
+
+#rechercher-rando {
+    background-color: #ffb6c1;
+}
+
+#rechercher-rando .sub-action {
+    margin-left: 1em;
+}
+
+#obtenir-code-rando, #voir-descriptif {
+    background-color: #ccc;
+}
+
+#gerer-site-rando {
+    background-color: #90ee90;
+}
+
+#gerer-site-rando .sub-action {
+    margin-left: 1em;
+}

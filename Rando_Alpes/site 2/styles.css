@@ -1,0 +1,159 @@
+/* styles.css */
+
+/* Style de base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(53, 66, 74, 0.9);
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: #45a049;
+    transition: color 0.3s;
+}
+
+/* Welcome Section */
+#welcome {
+    height: 100vh;
+    background: url('image/randonnée-full.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+#welcome .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#welcome .welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#welcome .welcome-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#welcome .welcome-text p {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #35424a;
+    color: white;
+}
+
+/* Map container */
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    #welcome .welcome-text h1 {
+        font-size: 2em;
+    }
+
+    #welcome .welcome-text p {
+        font-size: 1em;
+    }
+}
