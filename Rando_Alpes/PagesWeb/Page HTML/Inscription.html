@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+    <title>Accueil</title>
+    
+</head>
+<body>
+
+    <header>
+        <!---->
+        <!--<h1>Alpes-Randos</h1>-->
+
+        <nav >
+            <ul >
+                <li class="nav_link">
+                    <a  href="index.php">Accueil</a>
+                </li>
+                <li class="nav_link">
+                    <a  href="../../liste_rando.php">Les Randos</a>
+                </li>
+                <li class="nav_link">
+                    <a  href="../../req_station.php">Les Stations </a>
+                </li>
+                <li class="nav_link">
+                    <a href="../../alp_rando_authentification.html">Mon compte</a>
+                </li>        
+                <li>  
+                    <form>
+                        <input  type="search" placeholder="Rechercher" aria-label="Search">   
+                    </form>
+                </li>
+            </ul>                       
+        </nav>
+    </header>
+
+    <section>
+        <form action="traitement_form_creation.php" method="post" enctype="application/x-www-form-urlencoded" >
+
+            <h2>Formulaire d'inscription</h2>
+            <p> Champs obligatoires</p>
+            <label for="per_nom">Nom : </label>
+            <input type="text" name="per_nom" id="per_nom" placeholder="saisir votre nom" size="25" required="Veuillez compléter ce champ!" />
+
+            <label for="per_prenom">Prénom : </label>
+            <input type="text" name="per_prenom" id="per_prenom" placeholder="saisir votre prénom" size="25" required="Veuillez compléter ce champ!" />
+
+            <label for="per_mdp">Mot de passe : </label>
+            <input type="password" name="per_mdp" id="per_mdp" placeholder="saisir votre mot de passe" size="25" required="Veuillez compléter ce champ!" />
+
+            <label for="per_mdp_conf">Confirmation mot de passe : </label>
+            <input type="password" name="per_mdp_conf" id="per_mdp_conf" placeholder="confirmez votre mot de passe" size="25" required="Veuillez compléter ce champ!" />
+
+            <label for="per_ville">Ville : </label>
+            <input type="text" name="per_ville" id="per_ville" placeholder="saisir votre ville" size="25" required="Veuillez compléter ce champ!" />
+
+            <label for="per_telephone">Téléphone : </label>
+            <input type="text" name="per_telephone" id="per_telephone" placeholder="saisir votre numéro de téléphone" size="25" />
+
+            <label for="per_Email">Email : </label>
+            <input type="text" name="per_Email" id="per_Email" placeholder="user@exmple.com" size="25" required="Veuillez compléter ce champ!" />
+
+            <input type="button" name="annuler" id="annuler" class="overlay" value="Annuler" />
+            <input type="submit" name="envoyer" id="envoyer" class="overlay" value="Envoyer" />
+
+        </form>
+        
+    </section>
+    
+   
+    
+    <footer>
+        <p>&copy; 2024 Alpes-Rando. Tous droits réservés.</p>
+        <div class="logos">
+           
+            <img class="tiktok" src="../Image/logo_tiktok.png" alt="Logo TikTok">
+            <img class="x" src="../Image/logo_x.png" alt="Logo X">
+            <img class="youtube" src="../Image/logo_youtube.png" alt="Logo YouTube">
+            <img class="instagram" src="../Image/logo_instagram.png" alt="Logo Instagram">
+        </div>
+    </footer>
+</body>
+</html>

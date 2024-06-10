@@ -1,0 +1,286 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 96%);
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*
+li, a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:yellow;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+
+.nav_link{
+    list-style: none;
+}
+
+.nav_link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a{
+    transition: all 0.3s ease 0s;
+}*/
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(7, 99, 19, 0.9);
+    z-index: 1000;
+    justify-content: space-between;
+    
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    
+}
+
+header nav ul li a {
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+header nav ul li form {
+    display: flex;
+    margin-left: 300%;
+}
+
+
+#bienvenue {
+    height: 100vh;
+    background: url('../Image/mont-blanc.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/*
+#nav-link{
+    margin: 100em;
+}*/
+
+#nav-link{
+    font-size: large;
+}
+
+#centrer-contenu{
+    align-items: center;
+}
+
+
+p{
+    font-size: 1.5em;
+}
+
+h1, p{
+    text-align: center;
+    
+}
+h1{
+    padding-top: 20%;
+    font-size: 50em;
+}
+
+.logos {
+    transition: 0.3s;
+    overflow: hidden;
+ }
+ 
+
+ footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(7, 99, 19, 0.9);
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.tiktok{
+    width: 3em;
+    height:3em;
+}
+
+.tiktok:hover {
+    width: 4em;
+    height:4em;
+    border-radius: 20px;
+ }
+
+.instagram{
+    width: 3em;
+    height: 3em;
+}
+
+.instagram:hover {
+    width: 4em;
+    height:4em;
+    border-radius: 20px;
+ }
+
+.youtube{
+    width: 3em;
+    height: 3em;
+}
+
+.youtube:hover {
+    width: 4em;
+    height:4em;
+    border-radius: 20px;
+ }
+
+.x{
+    width: 3em;
+    height: 3em;
+}
+
+.x:hover {
+    width: 4em;
+    height:4em;
+    border-radius: 20px;
+ }
+
+ .textePageAccueil{
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ .bienvenueText{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+ }
+
+ /* Section styles */
+section {
+    padding: 60px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50px;
+    margin-bottom: 70px;
+}
+
+ #map {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+}
+
+
+.bouton_reserver{
+    height: 4em;
+    width: 18em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 0px;
+    background-color: rgba(7, 99, 19, 0.9);
+
+}
+
+.bouton_reserver > a{
+    text-decoration: none;
+    color: white;
+}
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s;
+}
+#Creer_un_compte  {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+#Creer_un_compte:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s;
+}
+.overlay {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.overlay:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s;
+}

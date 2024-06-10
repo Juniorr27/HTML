@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+    <title>Accueil</title>
+    
+</head>
+<body>
+
+    <header>
+        <!---->
+        <!--<h1>Alpes-Randos</h1>-->
+
+        <nav >
+            <ul >
+                <li class="nav_link">
+                    <a  href="index.html">Accueil</a>
+                </li>
+                <li class="nav_link">
+                    <a  href="../../liste_rando.php">Nos Randos</a>
+                </li>
+                <li class="nav_link">
+                    <a  href="#">Mon compte</a>
+                </li>
+                <li class="nav_link">
+                    <a  href="#">Contact </a>
+                </li>
+                <li>  
+                    <form>
+                        <input  type="search" placeholder="Rechercher" aria-label="Search">   
+                    </form>
+                </li>
+            </ul>                       
+        </nav>
+    </header>
+
+    <section>
+        <h2> Authentification</h2>
+        <form action="traitement_form_authentification.php" method="post" enctype="application/x-www-form-urlencoded" >
+            <label for="per_courriel">Courriel :</label>
+            <input type="text" name="per_courriel" id="per_courriel" placeholder="saisir votre courriel" required="Veuillez compléter ce champ!" />
+
+            <label for="per_mdp">Mot de passe : </label>
+            <input type="password" name="per_mdp" id="per_mdp" placeholder="saisir votre mot de passe" required="Veuillez compléter ce champ!" />
+            <button type="submit"> Se Contacter</button>
+            <button type="submit"> Mot de passe oublié</button>
+
+
+        </form>
+     </section>
+
+     <section>
+        <form action="alp_rando_creation_compte.php"        method="post" enctype="application/x-www-form-urlencoded" >
+            <input type="submit" name="Creer_un_compte" id="Creer_un_compte" value="Creer un compte" />
+          </form>
+     </section>
+            
+
+    <footer>
+        <p>&copy; 2024 Alpes-Rando. Tous droits réservés.</p>
+        <div class="logos">
+           
+            <img class="tiktok" src="../Image/logo_tiktok.png" alt="Logo TikTok">
+            <img class="x" src="../Image/logo_x.png" alt="Logo X">
+            <img class="youtube" src="../Image/logo_youtube.png" alt="Logo YouTube">
+            <img class="instagram" src="../Image/logo_instagram.png" alt="Logo Instagram">
+        </div>
+    </footer>
+</body>
+</html>
