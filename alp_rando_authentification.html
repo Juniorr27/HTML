@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpes Rando : Authentification</title>
+</head>
+<body>
+      <form action="traitement_form_authentification.php" method="post" enctype="application/x-www-form-urlencoded" >
+        <fieldset>
+          <legend>Authentification</legend>
+          <p>
+            <label for="per_courriel">Courriel : </label>
+            <input type="text" name="per_courriel" id="per_courriel" placeholder="saisir votre courriel" required="Veuillez compléter ce champ!" />
+            
+            <label for="per_mdp">Mot de passe : </label>
+            <input type="password" name="per_mdp" id="per_mdp" placeholder="saisir votre mot de passe" required="Veuillez compléter ce champ!" />
+          </p>
+          <p>
+            <input type="button" name="Annuler" id="Annuler" value="Annuler" />
+            <input type="submit" name="Envoyer" id="Envoyer" value="Envoyer" />
+          </p>
+        </fieldset>
+      </form>
+      <form action="alp_rando_creation_compte.php" method="post" enctype="application/x-www-form-urlencoded" >
+        <input type="submit" name="Creer_un_compte" id="Creer_un_compte" value="Creer_un_compte" />
+      </form>
+            
+</body>
+</html>

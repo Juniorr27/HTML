@@ -1,0 +1,41 @@
+* {
+  margin : 0;
+}
+
+
+.taille-photos{
+  width: 10em;
+  height: 10em;
+}
+/*
+.sur-relief{
+  margin : 2,5em;
+}
+*/
+/*
+.row{
+  margin : 5em;
+}*/
+
+.nom-randos{
+    font-size : 2em;
+}
+
+.relief{
+  margin:5em;
+	/*border: groove 10px rgba(0, 0, 0, 0.205);*/
+	padding: 2em 2em 5em;
+	-moz-box-shadow: 4px 4px 10px #888;  
+	-webkit-box-shadow: 4px 4px 10px #888;  
+	box-shadow:4px 4px 6px #888;
+	border-radius: 0.25em;
+}
+
+.boutton-inscription{
+  font-size: 1.25em;
+  width: 6em;
+  height: 2em;
+  background-color: rgba(255, 0, 0, 0.575);
+  margin : 3em;
+  border-radius: 1em;
+}
